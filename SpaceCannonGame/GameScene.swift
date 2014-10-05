@@ -13,8 +13,7 @@ class GameScene: SKScene {
     var SHOOT_SPEED = CGFloat(1000.0) // Speed of cannon projectiles
     var cannon = SKSpriteNode(imageNamed: "Cannon") // Cannon Sprite
     var main = SKNode()     // Main game layer
-
-    //Turn off gravity. 
+    var shotFired = Bool()    //Turn off gravity.
     
     
     // Conversion for cannon radians to vector.
@@ -67,8 +66,13 @@ class GameScene: SKScene {
         
     }
     
-    // Delete nodes outside of the main view. 
+    // Delete nodes outside of the main view.
     override func didSimulatePhysics() {
+        
+        if(shotFired) {
+            self.fireCannon()
+            shotFired = false
+        }
         main.enumerateChildNodesWithName("ball", usingBlock: { (node, stop) -> Void in
             if(!CGRectContainsPoint(self.frame, node.position)){
                 node.removeFromParent()
@@ -80,7 +84,8 @@ class GameScene: SKScene {
         /* Called when a touch begins */
         
         for touch: AnyObject in touches {
-            self.fireCannon()
+            shotFired = true
+            
         }
     }
    
