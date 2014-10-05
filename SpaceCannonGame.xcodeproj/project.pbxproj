@@ -15,6 +15,18 @@
 		4ECC006619E0C67B007E9889 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC006519E0C67B007E9889 /* Images.xcassets */; };
 		4ECC006919E0C67B007E9889 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC006719E0C67B007E9889 /* LaunchScreen.xib */; };
 		4ECC007519E0C67B007E9889 /* SpaceCannonGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC007419E0C67B007E9889 /* SpaceCannonGameTests.swift */; };
+		4ECC008A19E0C77D007E9889 /* Ammo0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC007E19E0C77D007E9889 /* Ammo0@2x.png */; };
+		4ECC008B19E0C77D007E9889 /* Ammo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC007F19E0C77D007E9889 /* Ammo1@2x.png */; };
+		4ECC008C19E0C77D007E9889 /* Ammo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008019E0C77D007E9889 /* Ammo2@2x.png */; };
+		4ECC008D19E0C77D007E9889 /* Ammo3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008119E0C77D007E9889 /* Ammo3@2x.png */; };
+		4ECC008E19E0C77D007E9889 /* Ammo4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008219E0C77D007E9889 /* Ammo4@2x.png */; };
+		4ECC008F19E0C77D007E9889 /* Ammo5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008319E0C77D007E9889 /* Ammo5@2x.png */; };
+		4ECC009019E0C77D007E9889 /* Ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008419E0C77D007E9889 /* Ball@2x.png */; };
+		4ECC009119E0C77D007E9889 /* Block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008519E0C77D007E9889 /* Block@2x.png */; };
+		4ECC009219E0C77D007E9889 /* BlueBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008619E0C77D007E9889 /* BlueBar@2x.png */; };
+		4ECC009319E0C77D007E9889 /* Cannon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008719E0C77D007E9889 /* Cannon@2x.png */; };
+		4ECC009419E0C77D007E9889 /* Halo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008819E0C77D007E9889 /* Halo@2x.png */; };
+		4ECC009519E0C77D007E9889 /* Starfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC008919E0C77D007E9889 /* Starfield@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,18 @@
 		4ECC006E19E0C67B007E9889 /* SpaceCannonGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCannonGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECC007319E0C67B007E9889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ECC007419E0C67B007E9889 /* SpaceCannonGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCannonGameTests.swift; sourceTree = "<group>"; };
+		4ECC007E19E0C77D007E9889 /* Ammo0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo0@2x.png"; path = "../Ammo0@2x.png"; sourceTree = "<group>"; };
+		4ECC007F19E0C77D007E9889 /* Ammo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo1@2x.png"; path = "../Ammo1@2x.png"; sourceTree = "<group>"; };
+		4ECC008019E0C77D007E9889 /* Ammo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo2@2x.png"; path = "../Ammo2@2x.png"; sourceTree = "<group>"; };
+		4ECC008119E0C77D007E9889 /* Ammo3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo3@2x.png"; path = "../Ammo3@2x.png"; sourceTree = "<group>"; };
+		4ECC008219E0C77D007E9889 /* Ammo4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo4@2x.png"; path = "../Ammo4@2x.png"; sourceTree = "<group>"; };
+		4ECC008319E0C77D007E9889 /* Ammo5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ammo5@2x.png"; path = "../Ammo5@2x.png"; sourceTree = "<group>"; };
+		4ECC008419E0C77D007E9889 /* Ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ball@2x.png"; path = "../Ball@2x.png"; sourceTree = "<group>"; };
+		4ECC008519E0C77D007E9889 /* Block@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Block@2x.png"; path = "../Block@2x.png"; sourceTree = "<group>"; };
+		4ECC008619E0C77D007E9889 /* BlueBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BlueBar@2x.png"; path = "../BlueBar@2x.png"; sourceTree = "<group>"; };
+		4ECC008719E0C77D007E9889 /* Cannon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cannon@2x.png"; path = "../Cannon@2x.png"; sourceTree = "<group>"; };
+		4ECC008819E0C77D007E9889 /* Halo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Halo@2x.png"; path = "../Halo@2x.png"; sourceTree = "<group>"; };
+		4ECC008919E0C77D007E9889 /* Starfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Starfield@2x.png"; path = "../Starfield@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +120,18 @@
 		4ECC005819E0C67B007E9889 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4ECC007E19E0C77D007E9889 /* Ammo0@2x.png */,
+				4ECC007F19E0C77D007E9889 /* Ammo1@2x.png */,
+				4ECC008019E0C77D007E9889 /* Ammo2@2x.png */,
+				4ECC008119E0C77D007E9889 /* Ammo3@2x.png */,
+				4ECC008219E0C77D007E9889 /* Ammo4@2x.png */,
+				4ECC008319E0C77D007E9889 /* Ammo5@2x.png */,
+				4ECC008419E0C77D007E9889 /* Ball@2x.png */,
+				4ECC008519E0C77D007E9889 /* Block@2x.png */,
+				4ECC008619E0C77D007E9889 /* BlueBar@2x.png */,
+				4ECC008719E0C77D007E9889 /* Cannon@2x.png */,
+				4ECC008819E0C77D007E9889 /* Halo@2x.png */,
+				4ECC008919E0C77D007E9889 /* Starfield@2x.png */,
 				4ECC005919E0C67B007E9889 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -198,10 +234,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECC008F19E0C77D007E9889 /* Ammo5@2x.png in Resources */,
+				4ECC009019E0C77D007E9889 /* Ball@2x.png in Resources */,
 				4ECC006919E0C67B007E9889 /* LaunchScreen.xib in Resources */,
+				4ECC009219E0C77D007E9889 /* BlueBar@2x.png in Resources */,
+				4ECC008E19E0C77D007E9889 /* Ammo4@2x.png in Resources */,
+				4ECC009119E0C77D007E9889 /* Block@2x.png in Resources */,
+				4ECC008A19E0C77D007E9889 /* Ammo0@2x.png in Resources */,
+				4ECC008B19E0C77D007E9889 /* Ammo1@2x.png in Resources */,
 				4ECC006619E0C67B007E9889 /* Images.xcassets in Resources */,
 				4ECC005D19E0C67B007E9889 /* GameScene.sks in Resources */,
 				4ECC006419E0C67B007E9889 /* Main.storyboard in Resources */,
+				4ECC009519E0C77D007E9889 /* Starfield@2x.png in Resources */,
+				4ECC008D19E0C77D007E9889 /* Ammo3@2x.png in Resources */,
+				4ECC009419E0C77D007E9889 /* Halo@2x.png in Resources */,
+				4ECC008C19E0C77D007E9889 /* Ammo2@2x.png in Resources */,
+				4ECC009319E0C77D007E9889 /* Cannon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
