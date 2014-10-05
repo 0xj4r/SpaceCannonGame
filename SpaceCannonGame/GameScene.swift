@@ -55,6 +55,8 @@ class GameScene: SKScene {
     func fireCannon() {
 
         var ball = SKSpriteNode(imageNamed: "Ball")
+        ball.name = "ball"
+        
         var rotationVector = radiansToVector(cannon.zRotation)
         ball.position = CGPointMake(cannon.position.x + (cannon.size.width * 0.5 * rotationVector.dx), cannon.position.y + (cannon.size.width * 0.5 * rotationVector.dy))
         main.addChild(ball)
@@ -63,6 +65,15 @@ class GameScene: SKScene {
         ball.physicsBody = SKPhysicsBody(circleOfRadius: 6.0)
         ball.physicsBody?.velocity = CGVectorMake(rotationVector.dx * SHOOT_SPEED, rotationVector.dy * SHOOT_SPEED)
         
+    }
+    
+    // Delete nodes outside of the main view. 
+    override func didSimulatePhysics() {
+        main.enumerateChildNodesWithName("ball", usingBlock: { (node, stop) -> Void in
+            if(!CGRectContainsPoint(self.frame, node.position)){
+                node.removeFromParent()
+            }
+        })
     }
       
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
