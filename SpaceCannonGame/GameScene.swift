@@ -10,6 +10,18 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    var cannon = SKSpriteNode(imageNamed: "Cannon")
+    var main = SKNode()
+
+
+    // Conversion for cannon radians to vector.
+    func radiansToVector(tempRadians:CGFloat) -> CGVector {
+        let radians = Float(tempRadians)
+        let xVal = CGFloat(cosf(radians))
+        let yVal = CGFloat(sinf(radians))
+        let vector = CGVectorMake(xVal, yVal)
+        return vector
+    }
     
     override func didMoveToView(view: SKView) {
         // Add the background Image.
@@ -19,11 +31,9 @@ class GameScene: SKScene {
         self.addChild(background)
         
         // Add the main SpriteKit layer.
-        var main = SKNode()
         self.addChild(main)
         
         // Add the canon to the main layer.
-        var cannon = SKSpriteNode(imageNamed: "Cannon")
         cannon.position = CGPointMake(self.size.width * 0.5, 0.0)
         main.addChild(cannon)
         
@@ -35,16 +45,23 @@ class GameScene: SKScene {
         
     }
     
-    
+    // Add function to fire cannon when screen is tapped.
     func fireCannon() {
         var ball = SKSpriteNode(imageNamed: "Ball")
+        var rotationVector = radiansToVector(cannon.zRotation)
+        ball.position = CGPointMake(cannon.position.x + (cannon.size.width * 0.5 * rotationVector.dx), cannon.position.y + (cannon.size.width * 0.5 * rotationVector.dy))
+        main.addChild(ball)
+        
+        // Adding physics for the ball shooting.
+        ball.physicsBody = SKPhysicsBody(circleOfRadius: 6.0)
+        
     }
       
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
         for touch: AnyObject in touches {
-            fireCannon()
+            self.fireCannon()
         }
     }
    
