@@ -10,8 +10,9 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var cannon = SKSpriteNode(imageNamed: "Cannon")
-    var main = SKNode()
+    var SHOOT_SPEED = CGFloat(1000.0) // Speed of cannon projectiles
+    var cannon = SKSpriteNode(imageNamed: "Cannon") // Cannon Sprite
+    var main = SKNode()     // Main game layer
 
     //Turn off gravity. 
     
@@ -27,6 +28,8 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView)
     {
+        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0)
+
         // Add the background Image.
         var background = SKSpriteNode(imageNamed: "Starfield")
         background.size = CGSizeMake(self.size.width, self.size.height)
@@ -50,7 +53,6 @@ class GameScene: SKScene {
     
     // Add function to fire cannon when screen is tapped.
     func fireCannon() {
-        var SHOOT_SPEED = CGFloat(100.0)
 
         var ball = SKSpriteNode(imageNamed: "Ball")
         var rotationVector = radiansToVector(cannon.zRotation)
