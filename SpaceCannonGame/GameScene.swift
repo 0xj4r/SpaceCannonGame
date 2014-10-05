@@ -13,7 +13,9 @@ class GameScene: SKScene {
     var cannon = SKSpriteNode(imageNamed: "Cannon")
     var main = SKNode()
 
-
+    //Turn off gravity. 
+    
+    
     // Conversion for cannon radians to vector.
     func radiansToVector(tempRadians:CGFloat) -> CGVector {
         let radians = Float(tempRadians)
@@ -23,7 +25,8 @@ class GameScene: SKScene {
         return vector
     }
     
-    override func didMoveToView(view: SKView) {
+    override func didMoveToView(view: SKView)
+    {
         // Add the background Image.
         var background = SKSpriteNode(imageNamed: "Starfield")
         background.size = CGSizeMake(self.size.width, self.size.height)
@@ -47,6 +50,8 @@ class GameScene: SKScene {
     
     // Add function to fire cannon when screen is tapped.
     func fireCannon() {
+        var SHOOT_SPEED = CGFloat(100.0)
+
         var ball = SKSpriteNode(imageNamed: "Ball")
         var rotationVector = radiansToVector(cannon.zRotation)
         ball.position = CGPointMake(cannon.position.x + (cannon.size.width * 0.5 * rotationVector.dx), cannon.position.y + (cannon.size.width * 0.5 * rotationVector.dy))
@@ -54,6 +59,7 @@ class GameScene: SKScene {
         
         // Adding physics for the ball shooting.
         ball.physicsBody = SKPhysicsBody(circleOfRadius: 6.0)
+        ball.physicsBody?.velocity = CGVectorMake(rotationVector.dx * SHOOT_SPEED, rotationVector.dy * SHOOT_SPEED)
         
     }
       
